@@ -3,8 +3,9 @@ const express = require("express")
 const app = express() 
 
 // Handling GET / request 
-app.use("/", (req, res, next) => { 
-	res.send("This is the express server") 
+app.use("/mahan", (req, res, next) => { 
+	res.send("This is the mahan server") 
+	console.log("mahan")
 }) 
 
 // Handling GET /hello request 
